@@ -1,0 +1,20 @@
+# Dataset
+dataset: synthetic
+data_dir: data
+artifacts_dir: artifacts
+
+# Training
+batch_size: 256
+learning_rate: 0.001
+epochs: 5
+embedding_dim: 128
+hidden_dim: 256
+temperature: 0.05
+max_history: 10
+
+# Loss: InfoNCE (in-batch negatives)
+loss: infonce
+
+# Fusion weights (models/fusion.py)
+image_weight: 0.6
+text_weight: 0.4
